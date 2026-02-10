@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My web toons - Zeed chon Zadd</title>
+    <style>
+        :root {
+            --bg-dark: #0a0a0a;
+            --surface-dark: #121212;
+            --neon-green: #39FF14;
+            --text-main: #ffffff;
+        }
+
+        body {
+            font-family: 'Kanit', sans-serif;
+            margin: 0;
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+        }
+
+        /* ส่วนหัวพร้อมปุ่ม Login */
+        header {
+            background-color: var(--bg-dark);
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 3px solid var(--neon-green);
+            box-shadow: 0 0 15px rgba(57, 255, 20, 0.3);
+        }
+
+        header h1 {
+            margin: 0;
+            color: var(--neon-green);
+            text-shadow: 0 0 10px rgba(57, 255, 20, 0.5);
+            font-size: 24px;
+        }
+
+        .btn-login {
+            background-color: var(--neon-green);
+            color: black;
+            padding: 8px 18px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 14px;
+            transition: 0.3s;
+            border: 1px solid var(--neon-green);
+        }
+
+        .btn-login:hover {
+            background-color: transparent;
+            color: var(--neon-green);
+            box-shadow: 0 0 10px var(--neon-green);
+        }
+
+        /* เมนูนำทาง */
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            background-color: #000;
+            padding: 12px;
+        }
+        nav a {
+            color: #888;
+            text-decoration: none;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+        nav a:hover {
+            color: var(--neon-green);
+        }
+
+        /* คอนเทนเนอร์เนื้อหา */
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: var(--surface-dark);
+            border-radius: 12px;
+            border: 1px solid #222;
+        }
+
+        .manga-header {
+            border-left: 5px solid var(--neon-green);
+            margin-bottom: 25px;
+            padding: 5px 15px;
+        }
+
+        /* ปรับแต่งภาพหน้าปก */
+        .cover-img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            border: 1px solid #333;
+            transition: 0.3s;
+        }
+        .cover-img:hover {
+            border-color: var(--neon-green);
+            box-shadow: 0 0 15px rgba(57, 255, 20, 0.2);
+        }
+
+        /* ปรับแต่งรายการตอนอ่าน */
+        .chapter-list {
+            margin-top: 25px;
+            display: grid;
+            grid-template-columns: 1fr; /* เรียงแถวเดียวลงมา */
+            gap: 10px;
+        }
+
+        .chapter-item {
+            background-color: #1a1a1a;
+            padding: 12px 20px;
+            border-radius: 6px;
+            text-decoration: none;
+            color: #ccc;
+            display: flex;
+            justify-content: space-between;
+            transition: 0.2s;
+            border-left: 3px solid transparent;
+        }
+
+        .chapter-item:hover {
+            background-color: #222;
+            color: var(--neon-green);
+            border-left: 3px solid var(--neon-green);
+            padding-left: 25px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #444;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <h1>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; My web toons</h1>
+    </div>
+    <div class="login-box">
+        <a href="https://accounts.google.com/v3/signin/identifier?dsh=S772919914%3A1770574277572806&flowEntry=ServiceLogin&flowName=GlifWebSignIn&ifkv=AXbMIuCvLBk-ywbSfdLz9AMRd4HILQwZretbibS8KqFY1W0Q53nO_RqDU9cR6wTtLyHA3DHwSoifSQ" class="btn-login">LOGIN</a>
+    </div>
+</header>
+
+<nav>
+    <a href="index.html">หน้าแรก</a>
+    <a href="index.html">รายชื่อมังงะ</a>
+    <a href="index.html">ได้รับคะแนนสูงสุด</a>
+    <a href="index.html">อัปเดต</a>
+</nav>
+
+<div class="container">
+    <div class="manga-header">
+        <h2 style="margin:0;">เรื่อง Zeed chon Zadd</h2>
+    </div>
+    
+    <a href="ep1.html">
+    <img src="images2/cover.jpg" alt="หน้าปก Zeed chon Zadd" class="cover-img">
+    </a>
+
+    <div class="chapter-list">
+        <a href="ep1.html" class="chapter-item"><span>ตอนที่ 1</span> <span>อ่านเลย ></span></a>
+        <a href="ep2.html" class="chapter-item"><span>ตอนที่ 2</span> <span>อ่านเลย ></span></a>
+        <a href="ep3.html" class="chapter-item"><span>ตอนที่ 3</span> <span>อ่านเลย ></span></a>
+        <a href="ep4.html" class="chapter-item"><span>ตอนที่ 4</span> <span>อ่านเลย ></span></a>
+        <a href="ep5.html" class="chapter-item"><span>ตอนที่ 5</span> <span>อ่านเลย ></span></a>
+        <a href="ep6.html" class="chapter-item"><span>ตอนที่ 6</span> <span>อ่านเลย ></span></a>
+        <a href="ep7.html" class="chapter-item"><span>ตอนที่ 7</span> <span>อ่านเลย ></span></a>
+        <a href="ep8.html" class="chapter-item"><span>ตอนที่ 8</span> <span>อ่านเลย ></span></a>
+        <a href="ep9.html" class="chapter-item"><span>ตอนที่ 9</span> <span>อ่านเลย ></span></a>
+        <a href="ep10.html" class="chapter-item"><span>ตอนที่ 10</span> <span>อ่านเลย ></span></a>
+        <a href="ep11.html" class="chapter-item"><span>ตอนที่ 11</span> <span>อ่านเลย ></span></a>
+        <a href="ep12.html" class="chapter-item"><span>ตอนที่ 12</span> <span>อ่านเลย ></span></a>
+        <a href="ep13.html" class="chapter-item"><span>ตอนที่ 13</span> <span>อ่านเลย ></span></a>
+    </div>
+</div>
+
+<footer>
+    My Web Toons
+</footer>
+
+</body>
+</html>

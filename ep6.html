@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Manga Reader - โลกการ์ตูนสีเขียว</title>
+    <style>
+        /* ตัวแปรสีเพื่อให้แก้ง่าย */
+        :root {
+            --bg-dark: #0a0a0a;
+            --surface-dark: #121212;
+            --neon-green: #39FF14; /* สีเขียวนีออน */
+            --dark-green: #1a5c0a;
+            --text-main: #ffffff;
+        }
+
+        body {
+            font-family: 'Kanit', sans-serif; /* แนะนำใช้ Font Kanit เพื่อความสวยงาม */
+            margin: 0;
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+        }
+
+        /* ส่วนหัว (Header) */
+        header {
+            background-color: var(--bg-dark);
+            padding: 1.5rem;
+            text-align: center;
+            border-bottom: 3px solid var(--neon-green);
+            box-shadow: 0 0 15px rgba(57, 255, 20, 0.3);
+        }
+
+        header h1 {
+            margin: 0;
+            color: var(--neon-green);
+            text-shadow: 0 0 10px rgba(57, 255, 20, 0.5);
+            letter-spacing: 2px;
+        }
+
+        /* เมนูนำทาง */
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            background-color: #000;
+            padding: 12px;
+        }
+        nav a {
+            color: #888;
+            text-decoration: none;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+        nav a:hover {
+            color: var(--neon-green);
+        }
+
+        /* พื้นที่แสดงการ์ตูน */
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: var(--surface-dark);
+            border: 1px solid #222;
+            border-radius: 12px;
+        }
+
+        .manga-header {
+            border-left: 5px solid var(--neon-green);
+            margin-bottom: 25px;
+            padding: 5px 15px;
+        }
+
+        /* ส่วนแสดงภาพการ์ตูน */
+        .reader-area {
+            text-align: center;
+            background-color: #000;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .reader-area img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 5px;
+            border: 1px solid #333;
+        }
+
+        /* ส่วนควบคุม (Next/Prev) */
+        .controls {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            margin-top: 30px;
+            padding-bottom: 20px;
+        }
+
+        .btn {
+            background-color: transparent;
+            color: var(--neon-green);
+            padding: 10px 30px;
+            border: 2px solid var(--neon-green);
+            border-radius: 50px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: 0.3s;
+            text-transform: uppercase;
+        }
+        .btn:hover {
+            background-color: var(--neon-green);
+            color: black;
+            box-shadow: 0 0 20px rgba(57, 255, 20, 0.6);
+        }
+
+        select {
+            background-color: #222;
+            color: white;
+            padding: 10px;
+            border: 1px solid var(--neon-green);
+            border-radius: 5px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            font-size: 12px;
+            color: #444;
+            border-top: 1px solid #222;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>My web toons</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">หน้าแรก&nbsp;</a>
+        <a href="index.html">รายชื่อมังงะ</a>
+        <a href="index.html">ได้รับคะแนนสูงสุด</a>
+        <a href="index.html">อัปเดต</a>
+    </nav>
+
+<div class="container">
+        <div class="manga-header">
+            <h2 style="margin:0;">Say bye Atomic - <span style="color: var(--neon-green);">ตอนที่ 6</span></h2>
+        </div>
+
+
+
+
+
+
+  <div class="reader-area">
+            <!-- ตัวอย่างรูปภาพ -->
+      </div>
+        <span style="color: var(--neon-green)"><img src="images/1ep6.jpg" width="890" height="1754" alt=""/><img src="images/2ep6.jpg" width="890" height="1754" alt=""/><img src="images/3ep6.jpg" width="890" height="1754" alt=""/><img src="images/4ep6.jpg" width="890" height="1754" alt=""/></span>
+        <span style="color: var(--neon-green)"><img src="images/5ep6.jpg" width="890" height="1754" alt=""/><img src="images2/6ep6.jpg" width="890" height="1754" alt=""/><img src="images2/7ep6.jpg" width="890" height="1754" alt=""/><img src="images2/8ep6.jpg" width="890" height="1754" alt=""/></span>
+
+        <div class="controls"> <a href="ep5.html">
+          <button class="btn">กลับ</button>
+        </a>
+          <a href="ep7.html">
+          <button class="btn">ต่อไป</button>
+  </a>        </div>
+</div>
+
+<footer>
+      My web toons
+  </footer>
+
+</body>
+</html>
